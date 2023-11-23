@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percabangan If Else 2 - JS</title>
+</head>
+<body>
+    <script>
+        var nilai = prompt("Inputkan nilai akhir :");
+        var grade = "";
+
+        if(nilai >=90) grade = "grade anda :A"
+        else if(nilai >= 80) grade = "grade anda :B"
+        else if(nilai >= 70) grade = "grade anda :B"
+        else if(nilai >= 60) grade = "grade anda :C+"
+        else if(nilai >= 50) grade = "grade anda :C"
+        else if(nilai >= 40) grade = "grade anda :D"
+        else if(nilai >= 30) grade = "grade anda :E"
+        else grade = "F";
+
+        if(nilai >=101){
+            document.write(`<h1>mohon maaf nilai anda terlalu besar</h2>`);
+        
+            } else{
+              document.write(`<p>Grade anda: ${grade}</p>`);
+              
+            }
+    </script>
+</body>
+</html>
